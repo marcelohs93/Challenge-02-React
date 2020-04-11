@@ -6,6 +6,8 @@
 
 body {
   font-size: 14px;
+  font-family: sans-serif;
+  background-color:#e0e0e0;
 }
 
 div {
@@ -13,9 +15,19 @@ div {
   margin: 20px;
 }
 
+div ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 div li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 div li + li {
@@ -23,17 +35,45 @@ div li + li {
 }
 
 button {
-  background: #7159c1;
+  background: rgb(113, 89, 193);
   color: #fff;
   border: 0;
+  border-radius: 8px;
   padding: 10px 15px;
   cursor: pointer;
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  transition: filter 0.2s;
+}
+
+button:hover{
+  filter: brightness(70%)
 }
 
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+.container h1{
+  margin-bottom:40px;
+  border-bottom: solid 2px #7159c1;
+  color: #7159c1;;
+}
+.container{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input{
+  font-size: 14px;
+  margin:10px;
+}
+
+.inputs{
+  border-top: rgb(113, 89, 193) 2px solid;
+  margin:10px 0 20px;
+  
 }
